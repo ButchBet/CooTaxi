@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CooTaxi-(registro)</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" href="icon/Coo1.png">
+
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+    <div class="container">
+
+        <form action="POST" class="form" id="login">
+
+
+            <h2 class="formTitle">Ingrear</h2>
+            <div class="formMessage"></div>
+            <div class="formInputGroup">
+                
+                <input type="text" class="formInput" id="SingUpUserName" autofocus placeholder="Usuario o email">
+            
+            </div>
+
+            <div class="formInputGroup">
+                
+                <input type="password" class="formInput" id="SingUpUserName" placeholder="Contreaseña">
+            
+            </div>
+
+            <div class="formInputErrorMessage"></div>
+
+            <button class="formButton" type="submit" value="Submit">Continuar</button>
+
+            <p class="formText">
+                <a href="#" class="formLink">¿Contraseña olvidada?</a>
+            </p>
+            <p class="formText">
+                <a id="linkLogin" href="./" class="formLink">¿No tienes cuenta? Creaar cuenta</a>
+            </p>
+
+        </form>
+
+        <form action="POST" class="form formHidden" id="createAccount">
+
+
+            <h2 class="formTitle">Crear cuenta</h2>
+            <div class="formMessage"></div>
+            <div class="formInputGroup">
+                
+                <input type="text" class="formInput" id="SingUpUserName" autofocus placeholder="Nombre de usuario">
+            
+            </div>
+
+            <div class="formInputGroup">
+                
+                <input type="email" class="formInput" id="SingUpUserName" placeholder="Email">
+            
+            </div>
+
+            <div class="formInputGroup">
+                
+                <input type="password" class="formInput" id="SingUpUserName" placeholder="Contreaseña">
+            
+            </div>
+
+            <div class="formInputGroup">
+                
+                <input type="password" class="formInput" id="SingUpUserName" placeholder="Confirmar contreaseña">
+            
+            </div>
+
+            <div class="formInputErrorMessage"></div>
+
+            <button class="formButton" type="submit" value="Submit">Continuar</button>
+
+            <p class="formText">
+                <a id="linkCreateAccount" href="./" class="formLink">¿Ya tienes cuenta? Ingresar</a>
+            </p>
+
+        </form>
+
+    </div>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
