@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 body{
-    --color-primary: #fff700;
-    --color-primary-dark:#fff111;
-    --color-secondary: black;
+    --color-primary: #ffc422;
+    --color-primary-dark:#ffc422eb;
+    --color-secondary: #363636;
     --color-error: #cc333398;
     --color-success: #4bb544;
     --border-radius: 4px;
@@ -14,22 +15,63 @@ body{
     align-content: center;
     justify-content: center;
     font-size: 18px;
+
+
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    background: var(--color-primary-dark);
+}
+
+header{
+    height: 35px;
+}
+
+header, main, footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+
+header, footer{
+    justify-content: center;
+    align-content: center;
+}
+
+footer{
+    flex-direction: row;
+    justify-content: space-between;
+}.registFooter{
+    justify-content: center;
+}
+
+.formFooterFirst{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    font-size: 13px;
+}.formFooterFirst label .formCheckBox{
+    background: transparent;
+}
+
+.formFooterSecond{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 
 .container{
-    width: 400px;
-    max-width: 400px;
+    width: 270px;
+    max-width: 300px;
     margin: 1rem;
     padding: 2rem;
-    box-shadow: 0 0 40px rgb(0, 0, 0, 0.2);
-    border-radius: var(--border-radius);
-    background: #ffffff;
-}
-
-.container,
-.formInput,
-.formButton{
-    font: 500 1rem 'Quicksand', serif;
+    box-shadow: 2px 2px 10px rgb(1, 1, 1);
+    border-radius: 20px;
+    background: var(--color-secondary);
 }
 
 .formHidden{
@@ -44,11 +86,11 @@ body{
     margin-bottom: 0;
 }
 
-.formMessage, .formTitle{
+.formMessage{
     text-align: center;
     margin-bottom: 1rem;
 }.formTitle{
-    margin-bottom: 2rem;
+    margin-bottom: .5rem;
 }
 
 .formMessageSuccess{
@@ -60,24 +102,25 @@ body{
 }
 
 .formInputGroup{
-    margin-bottom: 1rem;
+    margin-bottom: .8rem;
 }
 
 .formInput{
+    color: #ffffff;
     display: block;
     width: 100%;
-    padding: 0.75rem;
+    padding: 0.6rem;
     box-sizing: border-box;
-    border-radius: 400px;
-    border: 1px solid #dddddd;
+    border-radius: var(--border-radius);
+    border: 1.5px solid #dddddd;
     outline: none;
-    background: #eeeeee;
-    transition: background .2s, border-color 0.2s;
+    background: var(--color-secondary);
+    transition: background .5s, border-color 0.2s;
 }
 
 .formInput:focus{
     border-color: var(--color-primary);
-    background: white;
+    background: #ffffff;
 }
 
 .formInputError{
@@ -93,17 +136,29 @@ body{
     color: var(--color-error);
 }
 
+.formLinkActive{
+    background: var(--color-primary-dark);
+}
+.formLinkDesactive{
+    background: var(--color-secondary);
+}
+
 .formButton{
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 50%;
     padding: 1rem 2rem;
-    font-weight: bold;
+    font-weight: 100;
     font-size: 1.1rem;
-    color: black;
+    color: rgb(255, 255, 255);
     border: none;
-    border-radius: 400px;
+    border-radius: 50px;
     outline: none;
     cursor: pointer;
     background: var(--color-primary);
+    box-shadow: 2px 3px 10px rgba(255, 255, 255, 0.2);
 }
 
 .formButton:hover{
@@ -111,19 +166,50 @@ body{
 }
 
 .formButton:active{
-    transform: scale(0.98);
+    transform: scale(0.95);
 }
 
-.formText{
-    text-align: center;
+.formChange{
+    display: flex;
+    border-radius: 100px;
+    width: 55%;
+    height: 100%;
+    align-content: center;
+    justify-content: flex-start;
+    padding: 0;
+    box-shadow: 2px 3px 10px rgba(255, 255, 255, 0.2);
 }
 
 .formLink{
-    color: var(--color-secondary);
+    color: #ffffff;
     text-decoration: none;
     cursor: pointer;
+}
+
+a.formLinkFisrt{
+    font-size: 15px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 24%;
+    border-radius: 100px;
+    padding: 7px 20px;
+    transition: .2s;
+}a.formLinkFisrt1{
+    border-radius: 100px 0 0 100px;
+}a.formLinkFisrt2{
+    border-radius: 0 100px 100px 0;
+}a.formLinkFisrt1:hover, a.formLinkFisrt2:hover{
+    text-decoration: none;
+}a.formLinkFisrt1:focus, a.formLinkFisrt2:focus{
+    transform: scale(0.95);
+}
+
+.formLinkLast{
+    font-size: 10px;
 }
 
 .formLink:hover{
     text-decoration: underline;
 }
+

@@ -18,71 +18,109 @@
     <div class="container">
 
         <form action="POST" class="form" id="login">
-
-
-            <h2 class="formTitle">Ingrear</h2>
-            <div class="formMessage"></div>
-            <div class="formInputGroup">
-                
-                <input type="text" class="formInput" id="SingUpUserName" autofocus placeholder="Usuario o email">
+            <header>
+                <div class="formChange">
+                    <a class="formLink formLinkFisrt formLinkFisrt1 formLinkActive" href="./">Ingresa</a>
+                    <a class="formLink formLinkFisrt formLinkFisrt2 formLinkDesactive" href="./">Registra</a>
+                </div>
+            </header>
             
-            </div>
+            <main>
+                <h2 class="formTitle">Bienvenido!</h2>
 
-            <div class="formInputGroup">
+                <div class="formMessage FormMesageFirst"></div>
+
+                <div class="formInputGroup">
                 
-                <input type="password" class="formInput" id="SingUpUserName" placeholder="Contreaseña">
+                    <input type="text" class="formInput" id="SingUpUserName" autofocus placeholder="Nombre de usuario o correo">
             
-            </div>
+                </div>
 
-            <div class="formInputErrorMessage"></div>
+                <div class="formInputGroup formInputLast">
+                
+                    <input type="password" class="formInput" id="SingUpUserName"  placeholder="Contraseña">
+                    <!-- <img src="./icon/eye-close-up.png" alt="eyeClosed">
+                    <img src="./icon/invisible.png" alt="eyeOpened"> -->
+            
+                </div>
 
-            <button class="formButton" type="submit" value="Submit">Continuar</button>
+                <div class="formMessage formMesageLast"></div>
 
-            <p class="formText">
-                <a href="#" class="formLink">¿Contraseña olvidada?</a>
-            </p>
-            <p class="formText">
-                <a id="linkLogin" href="./" class="formLink">¿No tienes cuenta? Creaar cuenta</a>
-            </p>
+
+                <a class="formLink formLinkLast" href="./">¿Olvidaste tu contraseña?</a>
+
+            </main>
+
+            <footer>
+                <div class="formFooterFirst">
+                    <label for="dataRemember">Recordar 
+                        <input type="checkbox" id="dataRemember" class="formCheckBox">
+                    </label>
+
+                </div>
+
+                <div class="formFooterSecond">
+                    <input type="button" value="Ingresar" class="formButton">
+                </div>
+            </footer>
 
         </form>
 
         <form action="POST" class="form formHidden" id="createAccount">
 
 
-            <h2 class="formTitle">Crear cuenta</h2>
-            <div class="formMessage"></div>
-            <div class="formInputGroup">
-                
-                <input type="text" class="formInput" id="SingUpUserName" autofocus placeholder="Nombre de usuario">
+            <header>
+                <div class="formChange">
+                    <a class="formLink formLinkFisrt formLinkFisrt1 formLinkActive" href="./">Ingresa</a>
+                    <a class="formLink formLinkFisrt formLinkFisrt2 formLinkDesactive" href="./">Registra</a>
+                </div>
+            </header>
             
-            </div>
+            <main>
+                <h2 class="formTitle">Bienvenido!</h2>
 
-            <div class="formInputGroup">
+                <div class="formMessage FormMesageFirst"></div>
+
+                <div class="formInputGroup">
                 
-                <input type="email" class="formInput" id="SingUpUserName" placeholder="Email">
+                    <input type="text" class="formInput" id="SingUpUserName" autofocus placeholder="Nombre de usuario o correo">
             
-            </div>
+                </div>
 
-            <div class="formInputGroup">
+                <div class="formInputGroup">
                 
-                <input type="password" class="formInput" id="SingUpUserName" placeholder="Contreaseña">
+                    <input type="email" class="formInput" id="SingUpUserName" placeholder="Correo electronico">
             
-            </div>
+                </div>
 
-            <div class="formInputGroup">
+                <div class="formInputGroup">
                 
-                <input type="password" class="formInput" id="SingUpUserName" placeholder="Confirmar contreaseña">
-            
-            </div>
+                    <input type="password" class="formInput" id="SingUpUserName"  placeholder="Contraseña">
+                    <!-- <img src="./icon/eye-close-up.png" alt="eyeClosed">
+                    <img src="./icon/invisible.png" alt="eyeOpened"> -->
+        
+                </div>
 
-            <div class="formInputErrorMessage"></div>
+                <div class="formInputGroup formInputLast">
+                
+                    <input type="password" class="formInput" id="SingUpUserName"  placeholder="Repite la contraseña">
+                    <!-- <img src="./icon/eye-close-up.png" alt="eyeClosed">
+                    <img src="./icon/invisible.png" alt="eyeOpened"> -->
+        
+                </div>
 
-            <button class="formButton" type="submit" value="Submit">Continuar</button>
 
-            <p class="formText">
-                <a id="linkCreateAccount" href="./" class="formLink">¿Ya tienes cuenta? Ingresar</a>
-            </p>
+                <div class="formMessage formMesageLast"></div>
+
+            </main>
+
+            <footer class="registFooter">
+
+                <div class="formFooterSecond">
+                    <input type="button" value="Registrar" class="formButton">
+                </div>
+
+            </footer>
 
         </form>
 
