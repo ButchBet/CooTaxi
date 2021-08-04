@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CooTaxi-(registro)</title>
+    <title>CooTaxi</title>
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -20,8 +20,8 @@
         <form action="POST" class="form" id="login">
             <header>
                 <div class="formChange">
-                    <a class="formLink formLinkFisrt formLinkFisrt1 formLinkActive" href="./">Ingresa</a>
-                    <a class="formLink formLinkFisrt formLinkFisrt2 formLinkDesactive" href="./">Registra</a>
+                    <a class="formLink formLinkFisrt formLinkFisrt1 formLinkActive" id="linkCreateAccount" href="./">Ingresa</a>
+                    <a class="formLink formLinkFisrt formLinkFisrt2 formLinkDesactive" id="linkLogin" href="./">Registra</a>
                 </div>
             </header>
             
@@ -32,19 +32,19 @@
 
                 <div class="formInputGroup">
                 
-                    <input type="text" class="formInput" id="SingUpUserName" autofocus placeholder="Nombre de usuario o correo">
+                    <input type="text" class="formInput" id="loginName" autofocus placeholder="Usuario/correo" required minlength="8" maxlength="30">
             
                 </div>
 
                 <div class="formInputGroup formInputLast">
                 
-                    <input type="password" class="formInput" id="SingUpUserName"  placeholder="Contraseña">
+                    <input type="password" class="formInput" id="loginPass"  placeholder="Contraseña" required minlength="8" maxlength="20">
                     <!-- <img src="./icon/eye-close-up.png" alt="eyeClosed">
                     <img src="./icon/invisible.png" alt="eyeOpened"> -->
             
                 </div>
 
-                <div class="formMessage formMesageLast"></div>
+                <div class="formInputErrorMessage formMesageLast"></div>
 
 
                 <a class="formLink formLinkLast" href="./">¿Olvidaste tu contraseña?</a>
@@ -53,14 +53,13 @@
 
             <footer>
                 <div class="formFooterFirst">
-                    <label for="dataRemember">Recordar 
-                        <input type="checkbox" id="dataRemember" class="formCheckBox">
-                    </label>
+                    <label for="dataRemember">Recordar </label>
+                    <input type="checkbox" id="dataRemember" class="formCheckBox">
 
                 </div>
 
                 <div class="formFooterSecond">
-                    <input type="button" value="Ingresar" class="formButton">
+                    <input type="submit" value="Ingresar" class="formButton">
                 </div>
             </footer>
 
@@ -71,8 +70,8 @@
 
             <header>
                 <div class="formChange">
-                    <a class="formLink formLinkFisrt formLinkFisrt1 formLinkActive" href="./">Ingresa</a>
-                    <a class="formLink formLinkFisrt formLinkFisrt2 formLinkDesactive" href="./">Registra</a>
+                    <a class="formLink formLinkFisrt formLinkFisrt1 formLinkActive" id="linkCreateAccount" href="./">Ingresa</a>
+                    <a class="formLink formLinkFisrt formLinkFisrt2 formLinkDesactive" id="linkLogin" href="./">Registra</a>
                 </div>
             </header>
             
@@ -83,19 +82,19 @@
 
                 <div class="formInputGroup">
                 
-                    <input type="text" class="formInput" id="SingUpUserName" autofocus placeholder="Nombre de usuario o correo">
+                    <input type="text" class="formInput" id="createName" autofocus placeholder="Nombre de usuario" required minlength="8" maxlength="30">
             
                 </div>
 
                 <div class="formInputGroup">
                 
-                    <input type="email" class="formInput" id="SingUpUserName" placeholder="Correo electronico">
-            
+                    <input type="email" class="formInput" id="createEmail" placeholder="Correo electronico" required>
+
                 </div>
 
                 <div class="formInputGroup">
                 
-                    <input type="password" class="formInput" id="SingUpUserName"  placeholder="Contraseña">
+                    <input type="password" class="formInput" id="createPass"  placeholder="Contraseña" required minlength="8" maxlength="30">
                     <!-- <img src="./icon/eye-close-up.png" alt="eyeClosed">
                     <img src="./icon/invisible.png" alt="eyeOpened"> -->
         
@@ -103,21 +102,21 @@
 
                 <div class="formInputGroup formInputLast">
                 
-                    <input type="password" class="formInput" id="SingUpUserName"  placeholder="Repite la contraseña">
+                    <input type="password" class="formInput" id="createRepeatPass"  placeholder="Repite la contraseña" required minlength="8" maxlength="30">
                     <!-- <img src="./icon/eye-close-up.png" alt="eyeClosed">
                     <img src="./icon/invisible.png" alt="eyeOpened"> -->
         
                 </div>
 
 
-                <div class="formMessage formMesageLast"></div>
+                <div class="formInputErrorMessage formMesageLast"></div>
 
             </main>
 
             <footer class="registFooter">
 
-                <div class="formFooterSecond">
-                    <input type="button" value="Registrar" class="formButton">
+                <div class="formFooterSecond formFooterSecondLast">
+                    <input type="submit" value="Registrar" class="formButton">
                 </div>
 
             </footer>
